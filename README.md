@@ -38,4 +38,4 @@ git clone <https://github.com/rodrigogfilho-cloud/DISPLAY.git>
 depois, abra o index.html.
 
 ```bash
-git clone <https://github.com/rodrigogfilho-cloud/DISPLAY.git>
+git clone https://github.com/rodrigogfilho-cloud/DISPLAY.git
