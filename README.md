@@ -29,10 +29,13 @@ Neste projeto, cada exemplo demonstra na prática o comportamento de diferentes 
 - HTML5
 - CSS3
 
-## 📁 Estrutura
+## Como executar
 
-```text
-.
-├── index.html
-├── style.css
-└── README.md
+Clone repositório e abra o arquivo index.html no navegador:
+
+git clone <https://github.com/rodrigogfilho-cloud/DISPLAY.git>
+
+depois, abra o index.html.
+
+```bash
+git clone <https://github.com/rodrigogfilho-cloud/DISPLAY.git>
