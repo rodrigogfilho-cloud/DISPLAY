@@ -6,7 +6,7 @@
 }
 
 html{
-    font-family: Arial;
+    font-family: helvetica;
 
 }
  
@@ -18,4 +18,15 @@ html{
 h1{
     font-size: 60px;
     margin: 30px;
+}
+
+sup{
+    font-size: 20px;
+}
+
+span{
+    font-size: 40px;
+    color: lightskyblue;
+    margin: 30px;
+ 
 }
