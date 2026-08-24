@@ -17,7 +17,10 @@ html{
 
 h1{
     font-size: 60px;
-    margin: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 2px;
+    width: 50%;
 }
 
 sup{
@@ -28,22 +31,43 @@ span{
     font-size: 40px;
     font-weight: 1;
     color: lightskyblue;
-    margin: 30px;
+    margin-left: 30px;
+    margin-top: 2px;
     
  
 }
 
 .informacoes{
     margin: 30px;
+    display: flex;
 }
 
 h2{
-    margin-top: 100px;
-    font-size: 40px;
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+.informacoes_left{
+width: 35%;
+}
+
+.informacoes_right{
+width: 40%;
+margin-left: 60px;
 }
 
 p{
-    
+    margin-top: 10px;
+    margin: 30px;
     font-size: 27px;
+}
+
+.informacoes_carregador_sem_fio{
+    margin-top: 10px;
+    margin: 30px;
+    font-size: 27px;
+    width: 70%;
 }
 
