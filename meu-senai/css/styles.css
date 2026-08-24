@@ -1,0 +1,83 @@
+/* seletor header --> elemento HTMl (tag)  */
+
+header{
+
+    background-color: rgb(172, 2, 33);
+    width: 100vw; 
+    height: 10vh;
+    text-align: center;
+
+}
+/* seletor de TAG (main) */
+main{
+
+    background-color: rgb(211, 202, 202);
+    /* VW - view width / VH - view higth  */
+    width: 100vw;
+    height: 85vh;
+}
+
+
+footer{
+    background-color: rgb(172, 2, 33);
+    color: #fff;
+    width: 100vw;
+    height: 5vh;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Todas as tags a na pagina */
+a{
+
+    text-decoration: none ; /* remover a decoração do texto (underline) */
+    color: #fff; 
+    font-size: 20px;
+    font-family: Arial, sans-serif; 
+
+}
+
+section{
+
+    width: 300px; /* altura*/
+    height: 300px; /* largura*/
+
+    /* bordas */
+    border-width: 2px;
+    border-radius: 15px;
+    border-style: solid;
+    
+    /* margens */
+    
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    
+}
+
+/* formatar com o seletor classe */
+
+.sec-01{
+    border-color: rgb(5, 3, 87);
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.sec-01 li{
+    color: black;
+    /* pesso da fonte */
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.sec-02{
+    border-color: rgb(5, 3, 87);
+    background-color: rgb(255, 255, 255);
+    
+}
+
+li{
+    /* sem decoração na lista */
+    list-style: none;
+}

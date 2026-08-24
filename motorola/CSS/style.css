@@ -9,10 +9,13 @@ html{
     font-family: helvetica;
 
 }
- 
+
+
 .main-container{
     display: flex;
-
+    height: 700px;
+    width: 1300;
+    justify-content: center;
 }
 
 h1{
