@@ -1,0 +1,90 @@
+/* Importação dos arquivos de estilo */
+@import url(./reset.css);
+@import url(./design-system.css);
+
+.color-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.color-section__sidebar{
+
+}
+
+.color-section__title{
+
+}
+
+.color-section__menu{
+
+}
+
+.color-section__link{
+
+}
+
+.color-section__link--active{
+
+}
+
+.color-section__link--active:hover{
+
+}
+
+.color-section__bar{
+
+}
+
+.color-section__bar:hover{
+    
+}
+
+.color-section__bar--rgb-1{background-color: blue; width: 15%; height: 100vh;
+
+}
+
+.color-section__bar--rgb-2{background-color: red; width: 15%; height: 100vh;
+
+}
+
+.color-section__bar--rgb-3{background-color: green; width: 15%; height: 100vh;
+
+}
+
+.color-section__bar--rgb-4{background-color: yellow; width: 15%; height: 100vh;
+
+}
+
+.color-section__bar--rgb-5{background-color:hotpink; width: 15%; height: 100vh;
+
+}
+
+.color-section__bar--rgb-6{background-color: aqua; width: 15%; height: 100vh;
+
+}
+
+
+.color-section__bar--cmyk-1{
+
+}
+
+.color-section__bar--cmyk-2{
+
+}
+
+.color-section__bar--cmyk-3{
+
+}
+
+.color-section__bar--cmyk-4{
+
+}
+
+.color-section__bar--cmyk-5{
+
+}
+
+.color-section__bar--cmyk-6{
+
+}
