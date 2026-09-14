@@ -1,0 +1,22 @@
+<main class="brands">
+        <header class="brands__title">
+            <h1>Conheça nossas marcas</h1>
+        </header>
+        <article class="brand-card">
+            <div class="brand-card__img">
+                <img src="./img/logo-kaiak.png" alt="Imagem de uma logo da marca de um perfume">
+            </div>
+            <div class="brand-card__title">
+                <h2>Kaiak</h2>
+            </div>   
+            <div class="brand-card__description">
+                <p>
+                    fragrâncias aromáticas para quem busca todo o frescor do mar
+                </p>
+            </div>
+            
+            <div class="brand-card__button">
+                <span>conhecer</span>
+            </div>
+        </article>
+    </main>
