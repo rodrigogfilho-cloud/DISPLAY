@@ -5,6 +5,7 @@
 .brands{
     padding: 30px;
     /* border: 2px solid; */
+    
 }
 
 .brands__title{
@@ -35,7 +36,7 @@
 .brand-card__image{
     width: 100%;
     height: 400px;
-    background-color: #a1a1a1;
+    background-color: var(--ui-card-img-bg);
     border-radius: 0 40px 0 40px;
     display: flex;
     align-items: center;
@@ -44,7 +45,7 @@
 }
 
 .brand-card__image span{
-    color: #5d5d5d;
+    color: var(--ui-card-text);
 }
 
 .brand-card__title{
@@ -54,27 +55,28 @@
 
 .brand-card__description{
     font-family: "Montserrat";
-    color: #555;
+    color: var(--ui-card-description);
     font-size: 16px;
     line-height: 1.6;
     /* Tamanho máximo (entre 0 à 400px) */
     max-width: 400px;
     height: 80px;
     width: 100%;
+   
 }
 
 .brand-card__button{
     align-self: flex-start;
     padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid #777;
+    border: 1px solid var(--ui-border-button);
     border-radius: 30px;
     color:var(--ui-text-button);
     cursor: pointer;
 }
 
 .brand-card__button:hover {
-    background-color: var(--ui-button-hover-bg)
+    background-color: var(--ui-button-hover-bg);
     color: var(--ui-button-hover-text);
 
 }
