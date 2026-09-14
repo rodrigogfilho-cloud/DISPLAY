@@ -1,11 +1,11 @@
 :root{
 
-    --ui-card-img-bg: #aac5f8;
+    --ui-card-img-bg: #fa993e;
     --ui-card-text: #ffffff;
     --ui-card-description: #555;
-    --ui-border-button: #777;
+    --ui-border-button: #f5862c;
     --ui-text-button: #333;
-    --ui-button-hover-bg: #1e2cf8;
-    --ui-button-hover-text: white;
+    --ui-button-hover-bg: #afafaf;
+    --ui-button-hover-text: rgb(255, 255, 255);
 
 }
