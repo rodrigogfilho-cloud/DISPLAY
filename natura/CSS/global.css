@@ -59,6 +59,8 @@
     line-height: 1.6;
     /* Tamanho máximo (entre 0 à 400px) */
     max-width: 400px;
+    height: 80px;
+    width: 100%;
 }
 
 .brand-card__button{
@@ -67,12 +69,12 @@
     background-color: transparent;
     border: 1px solid #777;
     border-radius: 30px;
-    color:#333;
+    color:var(--ui-text-button);
     cursor: pointer;
 }
 
 .brand-card__button:hover {
-    background-color: #555;
-    color: white;
+    background-color: var(--ui-button-hover-bg)
+    color: var(--ui-button-hover-text);
 
 }
