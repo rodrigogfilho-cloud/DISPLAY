@@ -188,6 +188,33 @@
     content: "✦";
     font-size: 16px;
     color: var(--faq-border-neon-glow);
-    transition: transform 0.3 ease, color 0.3 ease;
+    transition: transform 0.9 ease, color 0.3 ease;
 }
 
+/* Animação  do ícone ao abrir details */
+.color-section__faq-item[open] .color-section__faq-question::after{
+    transform:  rotate(180deg) scale(1.3);
+    color: #ffffff;
+
+}
+
+/* Mudança de cor do hover da pergunta */
+.color-section__faq-item:hover .color-section__faq-question{
+    color: #ffffff;
+}
+
+/* Estilo e transições na Resposta */
+.color-section__faq-answer{
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--faq-text-answer);
+    padding: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    transition: color 0.3 ease;
+}
+
+/* Efeito de mudança de cor no hover do texto da resposta */
+.color-section__faq-answer:hover{
+    color: #ffffff;
+}
