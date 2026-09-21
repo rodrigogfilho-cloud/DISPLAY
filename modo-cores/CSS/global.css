@@ -123,10 +123,71 @@
 /* Parte do Faq */
 
 .color-section__faq{
-    /* Ocupar a tela vvvv */
+    /* Ocupar a tela vvvv = flex-grow*/
     flex-grow: 1;
     background-color: var(--faq-bg);
     padding: 35px 40px;
     border-top: 1px solid var(--ui-border);
-    
+    display: flex;
+    flex-direction: column;
 }
+
+/* Titulo do FAQ */
+.color-section__faq-title{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--faq-text-title);
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+/* Card da pergunta (details)*/
+.color-section__faq-item{
+    background-color: var(--faq-card-bg);
+    border: 1px solid var(--faq-border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 20px; /* Aumentando espaçamento entre os cards das perguntas */
+    transition: all 0.3 ease-in-out;
+}
+
+/* Efeito neon com hover e foco com neon nos boxes */
+.color-section__faq-item:hover,
+.color-section__faq-item[open] {
+    background-color: var(--faq-card-hover-bg);
+    border-color: var(--faq-border-neon);
+    /* Efeito neon com box-shadow duplo (linha de contorno vibrante + brilho difuso */
+    box-shadow: 0 0 8px var(--faq-border-neon), 0 0 20px rgba(157, 38, 239, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Estilo do cabeçalho da pergunta (summary) */
+.color-section__faq-question{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--faq-text-question);
+    cursor: pointer;
+
+    /* Troca de ícone via CSS puro
+    Esconde a seta padrão nos navegadores padrão */
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2 ease;
+}
+
+/* Remove a seta nativa no Safari e navegadores WebKit */
+.color-section__faq-question::-webkit-details-marker{
+    display: none;
+}
+
+/* Novo ícone customizado (Criado com CSS puro) */
+.color-section__faq-question::after{
+    content: "✦";
+    font-size: 16px;
+    color: var(--faq-border-neon-glow);
+    transition: transform 0.3 ease, color 0.3 ease;
+}
+
