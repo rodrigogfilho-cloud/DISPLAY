@@ -132,3 +132,26 @@ Display inline-block elementos em linha + largura e altura: */
     font-size: medium;
     line-height: 30px;
 }
+
+
+.sumario details{
+    border: 2px solid #fff;
+    width: 25%;
+    margin-left: 25px;
+    border-radius: 5px;
+    background-color: crimson;
+    line-height: 25px; 
+    margin-bottom: 10px;
+}
+
+.sumario summary{
+    background-color: black;
+    color: white;
+    height: 30px;
+   
+}
+
+.sumario p{
+    color: rgb(55, 253, 5);
+    padding: 3%
+}
