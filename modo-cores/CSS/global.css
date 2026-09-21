@@ -188,7 +188,7 @@
     content: "✦";
     font-size: 16px;
     color: var(--faq-border-neon-glow);
-    transition: transform 0.9 ease, color 0.3 ease;
+    transition: transform 0.9s ease, color 0.3s ease;
 }
 
 /* Animação  do ícone ao abrir details */
