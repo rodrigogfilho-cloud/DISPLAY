@@ -25,6 +25,7 @@
     .container{
     display: flex;
     gap: 15px;
+    /* Alinhar os itens ao centro */
     justify-content: center;
     /* flex-wrap serve para fazer a quebra da página automático */
     flex-wrap: wrap;
@@ -32,6 +33,9 @@
 
     .box {
         width: 100%;
+        /* Diminui de 400px para 356px > dentro do @media. Defini um tamanho para á partir de 768px e de á partir 992px.
+        Isso faz com que, limita o máximo até onde pode crescer e existe o min-widht (ou min/max-widht/height) que defini da onde o px vai 
+        partir. Por exemplo: min-width: 400px. Isso significa que de 400px para cima, ele vai ficar de tal forma. */
         max-width: 400px;
         height: 200px;     
         background-color: black;
@@ -50,21 +54,23 @@ body {
     background-color: blue;
     color: white;
   }
+  .box{
+    max-width: 356px;
+  }
 }
 
 /* For devices with a minimum width of 992px (Large) */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px){
   body {
     background-color: tan;
     color: black;
   }
+
+  .box{
+    max-width: 450px;
+  }
 }
 
-@media (min-width: 768px) {
-    .box{
-        
-    }
-} 
 
 </style>
 
