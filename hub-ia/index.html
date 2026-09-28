@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Hub IA</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+<style>
+
+    /* ESTILO BASE - MOBILE */
+
+    body {
+        padding: 20px;
+        background-color: olive;
+        color: white;
+        font-family: ARial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    /* flex-wrap serve para fazer a quebra da página automático */
+    flex-wrap: wrap;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 400px;
+        height: 200px;     
+        background-color: black;
+    }
+  
+/* Base style for mobile devices */
+body {
+  background-color: olive;
+  color: white;
+}
+
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+  body {
+
+    background-color: blue;
+    color: white;
+  }
+}
+
+/* For devices with a minimum width of 992px (Large) */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: tan;
+    color: black;
+  }
+}
+
+@media (min-width: 768px) {
+    .box{
+        
+    }
+} 
+
+</style>
+
+</head>
+<body>
+    <h1>TESTE 01 MEDIA</h1>
+
+    <section class="container">
+
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+
+    </section>
+</body>
+</html>
