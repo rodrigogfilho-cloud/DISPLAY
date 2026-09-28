@@ -1,80 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Hub IA</title>
     <link rel="stylesheet" href="./CSS/style.css">
 
-<style>
+    <style>
+        /* ESTILO BASE - MOBILE */
 
-    /* ESTILO BASE - MOBILE */
+        body {
+            padding: 20px;
+            background-color: olive;
+            color: white;
+            font-family: ARial, sans-serif;
+            height: 300vh;
+        }
 
-    body {
-        padding: 20px;
-        background-color: olive;
-        color: white;
-        font-family: ARial, sans-serif;
-    }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-    h1 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
+        .container {
+            display: flex;
+            gap: 15px;
+            /* Alinhar os itens ao centro */
+            justify-content: center;
+            /* flex-wrap serve para fazer a quebra da página automático */
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
 
-    .container{
-    display: flex;
-    gap: 15px;
-    /* Alinhar os itens ao centro */
-    justify-content: center;
-    /* flex-wrap serve para fazer a quebra da página automático */
-    flex-wrap: wrap;
-    }
-
-    .box {
-        width: 100%;
-        /* Diminui de 400px para 356px > dentro do @media. Defini um tamanho para á partir de 768px e de á partir 992px.
+        .box {
+            width: 100%;
+            /* Diminui de 400px para 356px > dentro do @media. Defini um tamanho para á partir de 768px e de á partir 992px.
         Isso faz com que, limita o máximo até onde pode crescer e existe o min-widht (ou min/max-widht/height) que defini da onde o px vai 
         partir. Por exemplo: min-width: 400px. Isso significa que de 400px para cima, ele vai ficar de tal forma. */
-        max-width: 400px;
-        height: 200px;     
-        background-color: black;
-    }
-  
-/* Base style for mobile devices */
-body {
-  background-color: olive;
-  color: white;
-}
+            max-width: 400px;
+            height: 200px;
+            background-color: black;
+        }
 
-/* For devices with a minimum width of 768px (Medium) */
-@media screen and (min-width: 768px) {
-  body {
+        .container-position {
+            width: 100%;
+            height: 600px;
+            border: 2px solid blueviolet;
 
-    background-color: blue;
-    color: white;
-  }
-  .box{
-    max-width: 356px;
-  }
-}
-
-/* For devices with a minimum width of 992px (Large) */
-@media screen and (min-width: 992px){
-  body {
-    background-color: tan;
-    color: black;
-  }
-
-  .box{
-    max-width: 450px;
-  }
-}
+            position: relative;
+        }
 
 
-</style>
+        /* O filho (filho-tamanho) é absoluto em relação ao pai (container-position) */
+        .filho-tamanho {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+
+        }
+
+        .filho01__container-position {
+            top: 0;
+            left: 0;
+        }
+
+        .filho02__container-position {
+            top: 0;
+            right: 0;
+        }
+
+        .filho03__container-position {
+            bottom: 0;
+            left: 0;
+
+        }
+
+        .filho04__container-position {
+            bottom: 0;
+            right: 0;
+        }
+
+        .whats {
+            width: 75px;
+            height: 75px;
+            background-color: rgb(0, 219, 37);
+            border-radius: 50%;
+            border: 5px solid white;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        /* Base style for mobile devices */
+        body {
+            background-color: olive;
+            color: white;
+        }
+
+        /* For devices with a minimum width of 768px (Medium) */
+        @media screen and (min-width: 768px) {
+            body {
+
+                background-color: blue;
+                color: white;
+            }
+
+            .box {
+                max-width: 356px;
+            }
+        }
+
+        /* For devices with a minimum width of 992px (Large) */
+        @media screen and (min-width: 992px) {
+            body {
+                background-color: tan;
+                color: black;
+            }
+
+            .box {
+                max-width: 450px;
+            }
+        }
+    </style>
 
 </head>
+
 <body>
     <h1>TESTE 01 MEDIA</h1>
 
@@ -86,7 +138,20 @@ body {
         <div class="box"></div>
         <div class="box"></div>
 
+        <div class="container-position">
+
+            <div class="filho01__container-position filho-tamanho"></div>
+            <div class="filho02__container-position filho-tamanho"></div>
+            <div class="filho03__container-position filho-tamanho"></div>
+            <div class="filho04__container-position filho-tamanho"></div>
+
+        </div>
+
+        <div class="whats">
+
+        </div>
 
     </section>
 </body>
+
 </html>
