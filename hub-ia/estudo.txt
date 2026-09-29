@@ -1,0 +1,10 @@
+1° Estudar com Free code camp
+
+2° Estudar tags de Html e CSS (Fazer definição e funcionamento de cada tag)
+
+RF = 'Requisitos Funcionais'
+RNF = 'Requisitos não Funcionais'
+
+article = explica o que é o conteudo
+
+aside = é um elemento(por exemplo: imagem) relacionado ao article
