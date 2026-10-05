@@ -10,3 +10,5 @@ article = explica o que é o conteudo
 aside = é um elemento(por exemplo: imagem) relacionado ao article
 
 calc --> função de calculo do CSS
+
+pesquisar tags html
