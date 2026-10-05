@@ -7,7 +7,7 @@
   <style>
     /* o elemento raiz assume 100% da preferencia do navegador */
     html {
-      font-size: 100%;
+      font-size: 62.5%;
       font-family: system-ui, -apple-system, sans-serif;
       padding: 20px;
       background-color: #f8fafc;
@@ -23,14 +23,18 @@
     .caixa-px {
       background-color: #fee2e2;
       border: 2px solid #ef4444;
-      font-size: 16px;
+      font-size: 1.6rem;
+    }
+
+    .filho{
+      font-size: 1rem;
     }
 
     /* texto dinamico em rem */
     .caixa-rem {
       background-color: #dcfce7;
       border: 2px solid #22c55e;
-      font-size: 1rem;
+      font-size: 1.6rem;
     }
   </style>
 </head>
@@ -45,6 +49,10 @@
 
   <div class="caixa caixa-rem">
     <strong>Texto em REM (1rem):</strong> Acessível. Escala automaticamente com o navegador.
+  </div>
+
+  <div class="pai">
+    <p class="filho">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure dicta praesentium incidunt harum, adipisci magnam aut blanditiis ipsum ad modi voluptas ea possimus veniam perspiciatis placeat perferendis exercitationem hic.</p>
   </div>
 
 </body>
