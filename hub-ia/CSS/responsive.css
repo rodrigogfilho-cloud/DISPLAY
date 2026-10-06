@@ -8,7 +8,7 @@
     }
 
     .header{
-            height: auti;
+            height: auto;
             padding: 10px 8px;
             flex-direction: column;
             gap: 8px;
@@ -16,8 +16,34 @@
         }
 
     .header__title{
-        
+        font-size: 2.4rem; /*24px*/
     }
+
+    .nav__list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+        padding: 4px;
+    }
+
+    .nav__item{
+        flex: 1 1 calc(33.333% - 6px); /*Nada mais que um flex grow e depois flex-sherink e depois flex basics*/
+        text-align: center;
+    }
+
+    .nav__link{
+        width: 100%;
+        font-size: 1.1rem; /*11px*/
+        padding: 6px 4px;
+        display: block;
+        white-space: nowrap;
+        
+
+    }
+
+
         
 }
 
