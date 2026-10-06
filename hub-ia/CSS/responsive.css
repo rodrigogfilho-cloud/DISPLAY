@@ -1,8 +1,24 @@
 /* Smartphones até 500px */
 @media (max-width: 500px) {
-    .header{
-        flex-direction: column;
+    body{
+        padding-top: 170px;
+        padding-bottom: 60px;
+
+        
     }
+
+    .header{
+            height: auti;
+            padding: 10px 8px;
+            flex-direction: column;
+            gap: 8px;
+
+        }
+
+    .header__title{
+        
+    }
+        
 }
 
 @media( min-width: 501px) and (max-width: 767px) {}
