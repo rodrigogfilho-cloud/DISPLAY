@@ -1,0 +1,34 @@
+/* Reset de estilos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Escala REM: 62,5% de 16px = 10px, então 1rem = 10px */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Resgata a dimensão padrão de texto (1.6rem = 16px) */
+body {
+  font-family: var(--font-main);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

@@ -1,0 +1,321 @@
+/* ==========================================================
+   GLOBAL - estilos da versão desktop
+   (variables.css, reset.css, global.css e responsive.css
+   são carregados pelo index.html, nessa ordem)
+   ========================================================== */
+@import url('./variables.css');
+@import url('./reset.css');
+
+
+
+body {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-body);
+}
+
+/* ---------- MENU LATERAL (RF01) ---------- */
+.section-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100vh;
+    background-color: var(--color-sidebar-bg);
+    color: var(--color-sidebar-text);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    gap: 3rem;
+}
+
+.nav__brand {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-sidebar-text);
+}
+
+.nav__list {
+    width: 100%;
+}
+
+.nav__list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.nav__link {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.nav__link:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateX(0.5rem);
+}
+
+/* ---------- SEÇÕES (base) ---------- */
+.section-vet {
+    margin-left: 15%;
+    width: 85%;
+    min-height: 100vh;
+    padding: 6rem 5% 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.section-vet__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-text-title);
+}
+
+.section-vet__text {
+    font-size: var(--font-size-base);
+    color: var(--color-text-muted);
+}
+
+/* ---------- SEÇÃO 1: HERO ---------- */
+.section-vet--hero {
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.section-vet__infos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section-vet__img {
+    width: 45%;
+}
+
+.section-vet__photo {
+    width: 100%;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+}
+
+/* ---------- SEÇÃO 2: ESPECIALIDADES ---------- */
+.section-especialidades__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    row-gap: 2.4rem;
+}
+
+.section-especialidades__card {
+    width: 31.3%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 3rem 2.4rem;
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-top: 0.6rem solid var(--color-primary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
+}
+
+.section-especialidades__card:hover {
+    transform: translateY(-0.8rem);
+    box-shadow: var(--shadow-hover);
+}
+
+.section-especialidades__title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-text-title);
+}
+
+.section-especialidades__text {
+    font-size: var(--font-size-base);
+    color: var(--color-text-muted);
+}
+
+/* ---------- SEÇÃO 3: EQUIPE ---------- */
+.section-equipe__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    row-gap: 2.4rem;
+}
+
+.section-equipe__card {
+    width: 31.3%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.section-equipe__card:hover {
+    transform: translateY(-0.8rem);
+    box-shadow: var(--shadow-hover);
+}
+
+.section-equipe__img {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+}
+
+.section-equipe__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 2rem 2.4rem 2.4rem;
+}
+
+.section-equipe__name {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-text-title);
+}
+
+.section-equipe__crmv {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.section-equipe__text {
+    font-size: var(--font-size-base);
+    color: var(--color-text-muted);
+}
+
+/* ---------- SEÇÃO 4: INFRAESTRUTURA ---------- */
+.section-infra__schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 70%;
+    padding: 2.4rem 3rem;
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-left: 0.6rem solid var(--color-accent);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
+}
+
+.section-infra__schedule:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.section-infra__highlight {
+    font-weight: 600;
+    color: var(--color-text-title);
+}
+
+/* ---------- SEÇÃO 5: FAQ (RF04) ---------- */
+.faqs {
+    margin-left: 15%;
+    width: 85%;
+    min-height: 100vh;
+    padding: 6rem 5% 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.faqs__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-text-title);
+    text-align: center;
+}
+
+.faqs__container {
+    width: 100%;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.faqs__item {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 1.4rem 2rem;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
+}
+
+.faqs__item:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: var(--shadow-hover);
+}
+
+.faqs__summary {
+    font-weight: 600;
+    color: var(--color-text-title);
+    cursor: pointer;
+}
+
+.faqs__text {
+    margin-top: 1rem;
+    color: var(--color-text-muted);
+}
+
+/* ---------- RODAPÉ FIXO (RF05) ---------- */
+.section-footer {
+    position: fixed;
+    bottom: 0;
+    left: 15%;
+    width: 85%;
+    height: 7vh;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-sidebar-bg);
+    z-index: 1000;
+}
+
+.section-footer__text {
+    font-size: var(--font-size-sm);
+    color: var(--color-sidebar-text);
+}
+
+/* ---------- BOTÃO FLUTUANTE DO WHATSAPP (RF06) ---------- */
+.whatsapp {
+    position: fixed;
+    right: 2rem;
+    bottom: 10vh;
+    z-index: 1100;
+    padding: 1.2rem 2.4rem;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-text-title);
+    background-color: var(--color-accent);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
+}
+
+.whatsapp:hover {
+    transform: translateY(-0.4rem) scale(1.05);
+    box-shadow: var(--shadow-hover);
+}
